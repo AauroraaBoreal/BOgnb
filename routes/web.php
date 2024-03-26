@@ -23,4 +23,7 @@ Route::middleware([
         return view('employees/employees-view');
     })->name('employees');
 
+    Route::get('/planilla', function () {
+        return view('employees/weekly-payout-view');
+    })->name('weekly-payout');
 });
