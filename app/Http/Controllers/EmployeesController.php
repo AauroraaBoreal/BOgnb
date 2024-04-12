@@ -11,3 +11,4 @@ class EmployeesController extends Controller
         return view('employees/employees-view');
     }
 }
+   
