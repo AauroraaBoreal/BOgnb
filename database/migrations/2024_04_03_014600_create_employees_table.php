@@ -18,7 +18,7 @@ return new class extends Migration
             $table->enum('type_id_number', ['dni','nie','passport']);
             $table->integer('id_number')->unique;
             $table->date('date_of_birth');
-            $table->text('adress');
+            $table->text('address');
             $table->integer('phone_number')->unsigned();
             $table->string('email')->unique;
             $table->text('observations')->nullable();

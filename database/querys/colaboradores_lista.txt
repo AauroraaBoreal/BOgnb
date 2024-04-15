@@ -1,0 +1,13 @@
+INSERT INTO bognb.employees (name, last_name, type_id_number, id_number, date_of_birth, address, phone_number, email, observations, created_at, updated_at)
+VALUES
+('John', 'Doe', 'dni', FLOOR(RAND() * 100000000), '1990-05-15', '123 Main St, City', FLOOR(RAND() * 1000000000), 'john@example.com', 'Observation 1', NOW(), NOW()),
+('Jane', 'Doe', 'nie', FLOOR(RAND() * 100000000), '1992-08-20', '456 Elm St, Town', FLOOR(RAND() * 1000000000), 'jane@example.com', NULL, NOW(), NOW()),
+('Alice', 'Smith', 'passport', FLOOR(RAND() * 100000000), '1985-12-10', '789 Oak St, Village', FLOOR(RAND() * 1000000000), 'alice@example.com', 'Observation 2', NOW(), NOW()),
+('Bob', 'Johnson', 'dni', FLOOR(RAND() * 100000000), '1988-04-25', '101 Pine St, Hamlet', FLOOR(RAND() * 1000000000), 'bob@example.com', NULL, NOW(), NOW()),
+('Emma', 'Wilson', 'nie', FLOOR(RAND() * 100000000), '1995-10-30', '202 Maple St, Suburb', FLOOR(RAND() * 1000000000), 'emma@example.com', 'Observation 3', NOW(), NOW()),
+('Michael', 'Brown', 'passport', FLOOR(RAND() * 100000000), '1982-07-12', '303 Cedar St, County', FLOOR(RAND() * 1000000000), 'michael@example.com', NULL, NOW(), NOW()),
+('Sophia', 'Jones', 'dni', FLOOR(RAND() * 100000000), '1991-03-08', '404 Walnut St, State', FLOOR(RAND() * 1000000000), 'sophia@example.com', 'Observation 4', NOW(), NOW()),
+('William', 'Martinez', 'nie', FLOOR(RAND() * 100000000), '1987-11-18', '505 Birch St, Republic', FLOOR(RAND() * 1000000000), 'william@example.com', NULL, NOW(), NOW()),
+('Benjamin', 'Nguyen', 'passport', FLOOR(RAND() * 100000000), '1991-09-17', '1515 Maple St, Alliance', FLOOR(RAND() * 1000000000), 'benjamin@example.com', NULL, NOW(), NOW()),
+('Amelia', 'Kim', 'dni', FLOOR(RAND() * 100000000), '1985-02-08', '1616 Cedar St, Coalition', FLOOR(RAND() * 1000000000), 'amelia@example.com', 'Observation 10', NOW(), NOW()),
+('Lucas', 'Singh', 'nie', FLOOR(RAND() * 100000000), '1992-06-14', '1717 Walnut St, Confederation', FLOOR(RAND() * 1000000000), 'lucas@example.com', NULL, NOW(), NOW());

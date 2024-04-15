@@ -17,10 +17,12 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="font-sans antialiased">
-        {{-- <x-banner /> --}}
+    <body class="font-sans antialiased" x-data="{darkMode: true}" :class="{'dark': darkMode === true }">
 
+        <x-dm-switch/>
+        {{-- <x-banner /> --}}
         <x-side-bar/>
+
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900 p-4 sm:ml-64">
 
             {{-- @livewire('navigation-menu') --}}

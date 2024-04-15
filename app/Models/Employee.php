@@ -14,13 +14,8 @@ class Employee extends Model
 
     protected function name(): Attribute{
         return new Attribute(
-            get: function($value){
-                return ucwords($value);
-            },
-
-            set: function($value){
-                return strtolower($value);
-            }
+            get: fn($value) => ucwords($value),
+            set: fn($value) => strtolower($value)
         );
     }
 
